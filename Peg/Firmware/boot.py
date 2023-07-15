@@ -1,4 +1,3 @@
-import supervisor
 import board
 import digitalio
 import storage
@@ -8,7 +7,6 @@ import usb_hid
 from kb import KMKKeyboard
 from kmk.scanners import DiodeOrientation
 
-supervisor.set_next_stack_limit(4096 + 4096)
 
 # If this key is held during boot, don't run the code which hides the storage and disables serial
 # This will use the first row/col pin. Feel free to change it if you want it to be another pin
